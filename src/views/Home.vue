@@ -50,4 +50,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.vue-school-active-class {
+  color: #ab26ab;
+}
 </style>
