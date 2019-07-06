@@ -50,7 +50,12 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.vue-school-active-class {
-  color: #ab26ab;
+a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+a:hover,
+a:visited {
+  text-decoration: underline;
 }
 </style>
