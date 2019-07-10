@@ -16,11 +16,20 @@ export default new Router({
     },
 
     {
-      path: "/details/:slug",
+      path: "/destination/:slug",
       name: "DestinationDetails",
       props: true,
       component: () =>
-        import(/* webpackChunkName: "DestinationDetails"*/ "./views/DestinationDetails")
+        import(/* webpackChunkName: "DestinationDetails"*/ "./views/DestinationDetails"),
+      children: [
+        {
+          path: ":experienceSlug",
+          name: "experienceDetails",
+          props: true,
+          component: () =>
+            import(/*webpackChunkName: "ExperienceDetails"*/ "./views/ExperienceDetails")
+        }
+      ]
     }
   ]
 });
