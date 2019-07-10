@@ -12,7 +12,7 @@
   </section>
 </template>
 <script>
-import store from "@/store";
+import store from "@/store.js";
 export default {
   props: {
     slug: {
@@ -23,9 +23,6 @@ export default {
       type: String,
       required: true
     }
-  },
-  data() {
-    return {};
   },
   computed: {
     destination() {
