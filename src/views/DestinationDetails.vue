@@ -1,5 +1,6 @@
 <template>
   <div>
+    <GoBack />
     <section class="destinations">
       <h1>
         {{ destination.name }}
@@ -42,7 +43,11 @@
 </template>
 <script>
 import store from "@/store";
+import GoBack from "@/components/GoBack";
 export default {
+  components: {
+    GoBack
+  },
   data() {
     return {};
   },
