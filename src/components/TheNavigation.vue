@@ -21,6 +21,9 @@
           {{ destination.name }}
         </router-link>
       </li>
+      <li class="links">
+        <router-link to="/user">Dashboard</router-link>
+      </li>
     </ul>
   </nav>
 </template>
